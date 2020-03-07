@@ -32,9 +32,9 @@ function prepareBuckets(sal) {
     let expenses = new Object();
     expenses.necessity = (sal * 0.6).toFixed(2);
     expenses.emergency = (sal * 0.1).toFixed(2);
-    expenses.improvement = (sal * 0.1).toFixed(2);
-    expenses.investment = (sal * 0.1).toFixed(2);
-    expenses.fun = (sal * 0.1).toFixed(2);
+    expenses.improvement = (sal * 0.05).toFixed(2);
+    expenses.investment = (sal * 0.2).toFixed(2);
+    expenses.fun = (sal * 0.05).toFixed(2);
 
     $('#necessity').html(expenses.necessity);
     $('#emergency').html(expenses.emergency);
